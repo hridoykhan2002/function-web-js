@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#head{
+    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)) , url(img/pexels-sam-kolder-2387873.jpg) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed
+}
+nav{
+    height: 3rem;
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-item{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    color: black;
+    background-color: rgb(173, 169, 169);
+}
+.link a{
+    text-decoration: none;
+    color: rgb(252, 249, 249);
+    margin-left: 20px;
+    transition: all ease .4s;
+}
+.link a:hover{
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+.BtnB{
+    padding: 1px 10px ;
+    border-radius: 2rem;
+    background-color: rgb(243, 190, 190);
+    border: none;
+    display: none;
+}
+/* home */
+
+.home{
+    margin-top: 200px;
+}
+.explore-btn{
+    outline: none;
+    padding: 3px 10px;
+    border-radius: 2rem;
+    background-color: rgb(173, 169, 169);
+    
+}
+
+/* about */
+#about{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(173, 169, 169);
+}
+
+
+#blog{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+/* about */
+#service{
+    height: 100vh;
+    width: 100%;
+    background-color:  rgb(173, 169, 169);
+}
+/* about */
+#tour{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(253, 250, 250);
+}
+.bg-dark{
+    height: 10vh;
+    width: 100%;
+}
+.back{
+    outline: none;
+    padding: 3px 10px ;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgb(138, 109, 109);
+    position: fixed;
+    bottom:5% ;
+    right: 10%;
+    visibility: hidden;
+    z-index: -100;
+}
+.back-btn{
+    visibility: visible;
+    z-index: 100;
+}
+.navbar-page{
+    background-color: #fff;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 22;
+}
+@media screen and (max-width: 800px) {
+    .link{
+        display: none;
+    }
+    .BtnB{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+        transition:  ease .4s;
+    }
+    .show-link{
+        display: grid;
+        background-color: rgb(173, 169, 169) !important;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        border-top: 1px solid rgb(0, 0, 0);
+        margin-top: 38px;
+        padding: 5px;
+    }
+}
